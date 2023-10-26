@@ -67,6 +67,18 @@ img {
 
 .nav-list {
   display: flex;
+  position: relative;
+}
+
+.nav-list > .list-item:first-child:after {
+  display: block;
+  content: '';
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+  position: absolute;
+  margin-top: 20px;
 }
 
 .list-item:not(:last-child) {
@@ -139,8 +151,15 @@ img {
 }
 
 .main-info {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px, 1440px;
   padding: 188px 0;
-  background: #2e2f42;
 }
 
 .main-title {
@@ -194,6 +213,7 @@ img {
 
 .motto-list {
   display: flex;
+
 }
 
 .motto-list-item {
@@ -203,6 +223,19 @@ img {
 .motto-list-item:not(:last-child) {
   margin-right: 24px;
 }
+ .box {
+  display: block;
+  width: 264px;
+  height: 112px;
+  padding-top: 24px;
+  padding-right: 100px;
+  padding-bottom: 24px;
+  padding-left: 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid  #8E8F99;
+  background: #F4F4FD; 
+ }
 
 .motto-title {
   color: #2e2f42;
@@ -284,10 +317,37 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+.social-icon {
+  fill: #F4F4FD;
+}
+.item-icon {
+ 
+  gap: 24px;
+  border-radius: 50px;
+  background-color:  #4D5AE5;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
 }
 
-/******** Our  Portfolio ******/
+.list-icon {
+  display: flex;
+  max-width: 232px;
+  column-gap: 24px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
 
+ 
+ 
+ 
+
+
+
+/******** Our  Portfolio ******/
 
 .achievements-list {
   display: flex;
