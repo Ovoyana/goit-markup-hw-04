@@ -116,7 +116,7 @@ img {
   align-items: center;
   font-style: normal;
 }
-.phone {
+.contacts-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list {
